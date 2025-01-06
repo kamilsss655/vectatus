@@ -83,6 +83,11 @@ Here are some examples of use cases:
 * User has 3.7V LiPo battery, but wants to power 9V battery device
 * User has 18V power tool battery, but wants to charge the phone via USB C cable
 
+## MCU candidates
+Here is a list of potential MCU candidates for this project:
+* STM32G431CBU6 - higher cost STM32 solution with programable gain op-amp
+* LGT8F328P - low cost Atmega clone with some improvements, the programable gain op-amp is especially appealing for this use case
+
 ## MCU power circuit
 ![mcu-power](https://github.com/user-attachments/assets/1c3ee9b1-6d10-4dd9-9490-e3fd14fc396e)
 
