@@ -67,7 +67,21 @@ Features:
 - manual mode - CV 0-20V, CC 0-3A adjustable via buttons (user needs multimeter)
 
 ## Use cases
-...
+Here are some examples of use cases:
+* User has one AA 1.5V alkaline battery but wants to use 3V 2xAA battery device
+* User has one AA 1.5V alkaline battery but wants to charge the phone via USB C cable
+* User has 2X AA batteries, but wants to use 9V battery device
+* User has a solar panel, but wants to charge the 3.7V LiPo battery
+* User has a solar panel, but wants to charge the phone via USB C cable
+* User has a solar panel, but wants to charge the 12V car battery
+* User has a solar panel, but wants to charge the 18V power tool battery
+* User has 5V USB C charger, but wants to charge 12V car battery
+* User has 5V USB C charger, but wants to charge 3.7V LiPo battery
+* User has 5V USB C charger, but wants to use 3V 2xAA battery device
+* User has 5V USB C charger, but wants to drive power LED at 0.5/1A constant current
+* User has 3.7V LiPo battery, but wants to power 5V USB C device
+* User has 3.7V LiPo battery, but wants to power 9V battery device
+* User has 18V power tool battery, but wants to charge the phone via USB C cable
 
 ## MCU power circuit
 ![mcu-power](https://github.com/user-attachments/assets/1c3ee9b1-6d10-4dd9-9490-e3fd14fc396e)
