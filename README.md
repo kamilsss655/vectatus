@@ -72,6 +72,9 @@ Features:
 ## MCU power circuit
 ![mcu-power](https://github.com/user-attachments/assets/1c3ee9b1-6d10-4dd9-9490-e3fd14fc396e)
 
+## DC/DC converter circuit
+...
+
 
 ## Contributions
 The project is still in the design phase. If you have any ideas, suggestions let me know in the Issues section.
