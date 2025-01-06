@@ -71,3 +71,5 @@ Features:
 
 ## Contributions
 The project is still in the design phase. If you have any ideas, suggestions let me know in the Issues section.
+
+If you'd like to move this project forward any donations towards prototyping and design are welcome.
