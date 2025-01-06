@@ -18,7 +18,7 @@ Device will provide connections for output and input via:
 ## Operation
 The idea is to have MCU (STM32 probably) run independendly from a wide range of input voltages 0.6V-20V. The MCU power circuit will choose boost or LDO power path automatically for the MCU based on the input voltage.
 
-The DC/DC converion is done from the input source and to output. MCU has it's own power path which is pararell of the DC/DC converter part.
+The DC/DC converion is done from the input source and to output. MCU has it's own power path which is pararell to the DC/DC converter part.
 
 The DC/DC converter topology will either be:
 * non-inverting buck-boost
