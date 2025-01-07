@@ -85,8 +85,14 @@ Here are some examples of use cases:
 
 ## MCU candidates
 Here is a list of potential MCU candidates for this project:
-* STM32G431CBU6 - higher cost STM32 solution with programable gain op-amp
-* LGT8F328P - low cost Atmega clone with some improvements, the programable gain op-amp is especially appealing for this use case
+* STM32G431CBU6
+  - higher cost STM32 solution with programable gain op-amp
+  - it has USB PD controller so it could be possible to use 5V, 9V, 12V, 20V from the USB PD sources
+  - widely available
+* LGT8F328P
+  - low cost Atmega clone with some improvements
+  - the programable gain op-amp is especially appealing for this use case
+  - availability and support might be questionable
 
 ## MCU power circuit
 ![mcu-power](https://github.com/user-attachments/assets/1c3ee9b1-6d10-4dd9-9490-e3fd14fc396e)
