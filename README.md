@@ -93,6 +93,9 @@ Here is a list of potential MCU candidates for this project:
   - low cost Atmega clone with some improvements
   - the programable gain op-amp is especially appealing for this use case
   - availability and support might be questionable
+* RP2040
+  - claims high speed hardware PWM
+  - needs further reasearch
 
 ## MCU power circuit
 ![mcu-power](https://github.com/user-attachments/assets/1c3ee9b1-6d10-4dd9-9490-e3fd14fc396e)
