@@ -98,7 +98,12 @@ Here is a list of potential MCU candidates for this project:
   - needs further reasearch
 
 ## MCU power circuit
+V1:
 ![mcu-power](https://github.com/user-attachments/assets/1c3ee9b1-6d10-4dd9-9490-e3fd14fc396e)
+
+V2:
+![vectatus-2](https://github.com/user-attachments/assets/60c970f0-e896-4341-a7fb-1e1282e88188)
+
 
 ## DC/DC converter circuit
 ...
