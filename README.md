@@ -40,6 +40,10 @@ Features:
 * overcurrent protection on output and input
 * overdischarge protection
 * soft start
+  - slowly ramp-up the voltage at start
+* overvoltage protection on output when load is disconnected
+  - when voltage is raises 2-3V above preset value, immediately turn the duty cycle to 0 to prevent voltage spikes
+  - might require crowbar circuit as well
 
 ## Operation modes
 * CV (Constant Voltage) - provide stable voltage for powering different devices
