@@ -51,9 +51,9 @@ Features:
 * Charger - dedicated charger mode that can consist of CC/CV based on the specific needs of the target battery
 
 ## Input sources
-- 0.5-20V solar panels
-- 1.2V NiMh battery - needs to be protected from overdischarge
-- 1.5V alkaline - can drain batteries that are classified as "empty" due to joule thief design
+- 1.8-20V solar panels
+- 2 x 1.2V NiMh battery - needs to be protected from overdischarge
+- 2 x 1.5V alkaline - can drain batteries that are classified as "empty" due to joule thief design
 - 3.7V LiPo, Lithium-ion battery - needs to be protected from overdischarge
 - 5V USB - needs overcurrent protection
 - 9V battery
