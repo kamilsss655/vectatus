@@ -1,6 +1,9 @@
 # vectatus
 Vectatus - universal portable DC/DC converter
 
+![7](https://github.com/user-attachments/assets/907becdf-10fd-4e0c-bb57-2495eac52631)
+
+
 ## Introduction
 Vectatus is meant to be a portable, universal, programmable DC/DC converter that resolves most of the common power interfacing issues like not having the right battery, or a correct charger at hand.
 
@@ -107,6 +110,9 @@ V1:
 
 V2:
 ![vectatus-2](https://github.com/user-attachments/assets/60c970f0-e896-4341-a7fb-1e1282e88188)
+
+V3:
+Decided on a different solution. Not ready to be published yet though.
 
 
 ## DC/DC converter circuit
