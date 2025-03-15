@@ -5,6 +5,8 @@ Vectatus - universal portable programmable DC/DC converter
 
 ![vectatus-pcb](https://github.com/user-attachments/assets/19aba33c-e9f4-452a-86b7-c66815fba3c6)
 
+![back](https://github.com/user-attachments/assets/fb1222c6-c984-4e3c-9004-d7b7184c00cf)
+
 ![high-level-vectatus](https://github.com/user-attachments/assets/da3f6433-87c1-4ef2-8a7e-b05aaf931699)
 
 ## Introduction
