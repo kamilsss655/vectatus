@@ -1,5 +1,5 @@
 # vectatus
-Vectatus - universal portable DC/DC converter
+Vectatus - universal portable programmable DC/DC converter
 
 ![7](https://github.com/user-attachments/assets/907becdf-10fd-4e0c-bb57-2495eac52631)
 
@@ -22,12 +22,11 @@ Device will provide connections for output and input via:
 * common lipo battery connector
 
 ## Operation
-The idea is to have MCU (STM32 probably) run independendly from a wide range of input voltages 0.6V-20V. The MCU power circuit will choose boost or LDO power path automatically for the MCU based on the input voltage.
+The idea is to have MCU run independendly from a wide range of input voltages 2V-20V.
 
 The DC/DC converion is done from the input source and to output. MCU has it's own power path which is pararell to the DC/DC converter part.
 
-The DC/DC converter topology will either be:
-* non-inverting buck-boost
+The DC/DC converter topology will is:
 * SEPIC
 
 SEPIC seems favorable for this kind of application due to decoupling capacitor acting as a short circuit protection.
@@ -49,12 +48,12 @@ Features:
   - slowly ramp-up the voltage at start
 * overvoltage protection on output when load is disconnected
   - when voltage is raises 2-3V above preset value, immediately turn the duty cycle to 0 to prevent voltage spikes
-  - might require crowbar circuit as well
 
 ## Operation modes
 * CV (Constant Voltage) - provide stable voltage for powering different devices
 * CC (Constant Current) - provide constant current which can be used as a LED driver or a charger
 * Charger - dedicated charger mode that can consist of CC/CV based on the specific needs of the target battery
+* MPPT - dedicated mode for use with solar panels
 
 ## Input sources
 - 1.8-20V solar panels
@@ -93,33 +92,11 @@ Here are some examples of use cases:
 * User has 3.7V LiPo battery, but wants to power 9V battery device
 * User has 18V power tool battery, but wants to charge the phone via USB C cable
 
-## MCU candidates
-Here is a list of potential MCU candidates for this project:
-* STM32G431CBU6
-  - higher cost STM32 solution with programable gain op-amp
-  - it has USB PD controller so it could be possible to use 5V, 9V, 12V, 20V from the USB PD sources
-  - widely available
+## MCU used
+MCU used is:
 * LGT8F328P
   - low cost Atmega clone with some improvements
   - the programable gain op-amp is especially appealing for this use case
-  - availability and support might be questionable
-* RP2040
-  - claims high speed hardware PWM
-  - needs further reasearch
-
-## MCU power circuit
-V1:
-![mcu-power](https://github.com/user-attachments/assets/1c3ee9b1-6d10-4dd9-9490-e3fd14fc396e)
-
-V2:
-![vectatus-2](https://github.com/user-attachments/assets/60c970f0-e896-4341-a7fb-1e1282e88188)
-
-V3:
-Decided on a different solution. Not ready to be published yet though.
-
-
-## DC/DC converter circuit
-...
 
 
 ## Contributions
