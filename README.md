@@ -27,7 +27,7 @@ Device will provide connections for output and input via:
 > This custom-built evaluation kit is intended for use by professionals and is solely designated for research and development purposes at appropriate facilities. Any usage of the device outside of these parameters may result in fire, damage to property, or other hazards. Users are responsible for ensuring compliance with all local laws and regulations governing the use of such technology. The author of this kit shall not be held liable for any misuse or unlawful activities conducted by the user. By using this kit, you acknowledge and accept these terms and conditions.
 
 > [!WARNING]
-> USB C output is directly connected to the output of the converter. Thus is user selects voltage output which is outside of the USB spec, like 9V, then 9V will appear on the USB C output possibly destroying the device connected.
+> USB C output is directly connected to the output of the converter. Thus if the user selects voltage output which is outside of the USB spec, like 9V, then 9V will appear on the USB C output possibly destroying the device connected.
 
 ## Operation
 The idea is to have MCU run independendly from a wide range of input voltages 2V-20V.
