@@ -29,6 +29,15 @@ Device will provide connections for output and input via:
 > [!WARNING]
 > USB C output is directly connected to the output of the converter. Thus if the user selects voltage output which is outside of the USB spec, like 9V, then 9V will appear on the USB C output possibly destroying the device connected.
 
+## Table of contents
+* [Operation](#operation)
+* [Operation modes](#operation-modes)
+* [Input sources](#input-sources)
+* [Output sources](#output-sources)
+* [Use cases](#use-cases)
+* [Details](#details)
+* [Wiki](#details)
+
 ## Operation
 The idea is to have MCU run independendly from a wide range of input voltages 2V-20V.
 
@@ -87,8 +96,7 @@ Features:
 
 ## Use cases
 Here are some examples of use cases:
-* User has one AA 1.5V alkaline battery but wants to use 3V 2xAA battery device
-* User has one AA 1.5V alkaline battery but wants to charge the phone via USB C cable
+* User has 2x AA 1.5V alkaline batteries but wants to charge the phone via USB C cable
 * User has 2X AA batteries, but wants to use 9V battery device
 * User has a solar panel, but wants to charge the 3.7V LiPo battery
 * User has a solar panel, but wants to charge the phone via USB C cable
@@ -102,14 +110,11 @@ Here are some examples of use cases:
 * User has 3.7V LiPo battery, but wants to power 9V battery device
 * User has 18V power tool battery, but wants to charge the phone via USB C cable
 
-## MCU used
+## Details
 MCU used is:
 * LGT8F328P
   - low cost Atmega clone with some improvements
   - the programable gain op-amp is especially appealing for this use case
 
-
-## Contributions
-The project is still in the design phase. If you have any ideas, suggestions let me know in the [Discussions](https://github.com/kamilsss655/vectatus/discussions) section.
-
-If you'd like to move this project forward any donations towards prototyping and design are welcome.
+## Wiki
+Please take a look at the [Wiki](https://github.com/kamilsss655/ESPRI/wiki) section.
