@@ -120,4 +120,4 @@ Here are some examples of use cases:
     - fast, cheap, logic level MOSFET
 
 ## Wiki
-Please take a look at the [Wiki](https://github.com/kamilsss655/ESPRI/wiki) section.
+Please take a look at the [Wiki](https://github.com/kamilsss655/vectatus/wiki) section.
