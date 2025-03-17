@@ -35,7 +35,7 @@ Device will provide connections for output and input via:
 * [Input sources](#input-sources)
 * [Output sources](#output-sources)
 * [Use cases](#use-cases)
-* [Details](#details)
+* [Parts used](#parts-used)
 * [Wiki](#details)
 
 ## Operation
@@ -110,11 +110,14 @@ Here are some examples of use cases:
 * User has 3.7V LiPo battery, but wants to power 9V battery device
 * User has 18V power tool battery, but wants to charge the phone via USB C cable
 
-## Details
-MCU used is:
-* LGT8F328P
-  - low cost Atmega clone with some improvements
-  - the programable gain op-amp is especially appealing for this use case
+## Parts used
+* MCU used is:
+  * LGT8F328P
+    - low cost Atmega clone with some improvements
+    - the programable gain op-amp is especially appealing for this use case
+* N-channel MOSFET
+  * FQP30N06L
+    - fast, cheap, logic level MOSFET
 
 ## Wiki
 Please take a look at the [Wiki](https://github.com/kamilsss655/ESPRI/wiki) section.
