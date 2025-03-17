@@ -58,10 +58,12 @@ Features:
   - when voltage is raises 2-3V above preset value, immediately turn the duty cycle to 0 to prevent voltage spikes
 
 ## Operation modes
+* Idle mode - no output present, input and output is isolated via SEPIC coupling capacitor
 * CV (Constant Voltage) - provide stable voltage for powering different devices
 * CC (Constant Current) - provide constant current which can be used as a LED driver or a charger
 * Charger - dedicated charger mode that can consist of CC/CV based on the specific needs of the target battery
 * MPPT - dedicated mode for use with solar panels
+* Calibration mode - allows users to fine tune input and output voltages and currents via onboard buttons (NO PC NEEDED to calibrate)
 
 ## Input sources
 - 1.8-20V solar panels
