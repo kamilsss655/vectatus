@@ -112,7 +112,7 @@ Here are some examples of use cases:
 * User has 18V power tool battery, but wants to charge the phone via USB C cable
 
 ## Efficiency
-Efficiency is around 78% depending on input and output conditions.
+Efficiency is around **78%** depending on input and output conditions.
 
 More efficiency tests can be found here: https://github.com/kamilsss655/vectatus/wiki/Tests#efficiency-tests
 
