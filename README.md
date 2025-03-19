@@ -35,8 +35,9 @@ Device will provide connections for output and input via:
 * [Input sources](#input-sources)
 * [Output sources](#output-sources)
 * [Use cases](#use-cases)
+* [Efficiency](#efficiency)
 * [Parts used](#parts-used)
-* [Wiki](#details)
+* [Wiki](#wiki)
 
 ## Operation
 The idea is to have MCU run independendly from a wide range of input voltages 2V-20V.
@@ -109,6 +110,11 @@ Here are some examples of use cases:
 * User has 3.7V LiPo battery, but wants to power 5V USB C device
 * User has 3.7V LiPo battery, but wants to power 9V battery device
 * User has 18V power tool battery, but wants to charge the phone via USB C cable
+
+## Efficiency
+Efficiency is around 78% depending on input and output conditions.
+
+More efficiency tests can be found here: https://github.com/kamilsss655/vectatus/wiki/Tests#efficiency-tests
 
 ## Parts used
 * MCU used is:
