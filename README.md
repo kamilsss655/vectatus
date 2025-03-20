@@ -114,6 +114,8 @@ Here are some examples of use cases:
 ## Efficiency
 Efficiency is around **78%** depending on input and output conditions.
 
+Efficiency could likely be raised to ~89% by increasing the gate drive current from 80mA to 500mA by using a totem pole driver.
+
 More efficiency tests can be found here: https://github.com/kamilsss655/vectatus/wiki/Tests#efficiency-tests
 
 ## Parts used
