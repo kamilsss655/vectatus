@@ -138,24 +138,26 @@ V3.1:
 
 The LGT8F328P can be programmed either via:
 * ISP programmer - ISP programmer can be made from Arduino board (i.e Arduino Uno) detailed instructions here: https://github.com/kamilsss655/LGTISP and here https://github.com/dbuezas/lgt8fx/blob/master/lgt8f/libraries/LarduinoISP/readme.md , this is likely needed only once to burn the Arduino bootloader onto the chip (unless it comes with bootloader burned in already)
-      | Nano || LGT8F328P ||
-      |:-:|:-:|:-:|:-:|
-      | D13 | -> | SWC ||
-      | D12 | -> | SWD ||
-      | D10 | -> | RST | (optional)|
-      | VCC | -> | VCC ||
-      | GND | -> | GND ||
+
+| Nano      | LGT8F328P | 
+|:---------:|:---------:| 
+| D13       |  SWC    | 
+| D12       |  SWD    | 
+| D10       |  RST (optional) | 
+| VCC       |  VCC    | 
+| GND       |  GND    | 
 
       Note: A capacitor (e.g 10uF) between the RESET pin and VCC pin of ISP programmer is needed
 
 * Serial connection (for example using FTDI cable or any other serial to USB cable):
-      | FTDI || LGT8F328P ||
-      |:-:|:-:|:-:|:-:|
-      | RX | -> | TX ||
-      | TX | -> | RX ||
-      | DTR | -> | RST || (optional, must use 0.1uF capacitor in between these lines, otherwise the autoreset will not work)
-      | VCC | -> | VCC ||
-      | GND | -> | GND ||
+
+| FTDI      | LGT8F328P|
+|:---------:|:---------:|
+| RX        |TX         |
+| TX        |RX         |
+| DTR       |RST (optional, must use 0.1uF capacitor in between these lines, otherwise the autoreset will not work)|
+| VCC       |VCC        |
+| GND       |GND        |
 
       for FTDI adapter either `3.3V` or `5V` mode can be used
 
