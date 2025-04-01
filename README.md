@@ -37,6 +37,7 @@ Device will provide connections for output and input via:
 * [Use cases](#use-cases)
 * [Efficiency](#efficiency)
 * [Parts used](#parts-used)
+* [Schematic](#schematic)
 * [Hardware connections](#hardware-connections)
 * [Wiki](#wiki)
 
@@ -127,6 +128,11 @@ More efficiency tests can be found here: https://github.com/kamilsss655/vectatus
 * N-channel MOSFET
   * FQP30N06L
     - fast, cheap, logic level MOSFET
+
+## Schematic
+
+V3.1:
+![schematic-3-1](https://github.com/user-attachments/assets/2f25cf6b-0219-48fc-81a4-24aed2730ba3)
 
 ## Hardware connections
 
