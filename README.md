@@ -136,6 +136,9 @@ More efficiency tests can be found here: https://github.com/kamilsss655/vectatus
 V3.1:
 ![schematic-3-1](https://github.com/user-attachments/assets/2f25cf6b-0219-48fc-81a4-24aed2730ba3)
 
+V4 (proof of concept, slight improvements over v3.1, however ceramic caps from V3.1 are superior to electrolitic onces and should remain unchanged):
+![schematic-4](https://github.com/user-attachments/assets/4d1c7ab8-658c-4d09-ac67-600a47a43554)
+
 ## Hardware connections
 
 The LGT8F328P can be programmed either via:
