@@ -39,6 +39,8 @@ Device will provide connections for output and input via:
 * [Parts used](#parts-used)
 * [Schematic](#schematic)
 * [Hardware connections](#hardware-connections)
+* [Controls](#controls)
+* [Calibration mode](#calibration-mode)
 * [Wiki](#wiki)
 
 ## Operation
@@ -160,6 +162,34 @@ The LGT8F328P can be programmed either via:
 | GND       |GND        |
 
       for FTDI adapter either `3.3V` or `5V` mode can be used
+
+## Controls
+Control over the device is done via 2 buttons:
+* `MODE`
+  * `short press` - enable or disable the output
+  * `hold` - go to next mode
+* `OUTPUT`
+  * `short press` - change output params
+  * `hold` - change secondary output params (depending on mode)
+
+## Calibration mode
+To enter calibration mode hold OUTPUT and MODE buttons while device is being turned on, the LEDS will blink, then release all buttons.
+
+The calibration point ( output voltage and current) will be loaded from the EEPROM as last used CC/CV mode settings, so user can calibrate different output points based on preference.
+
+Most of the calibrations can be done by attaching voltmeter or ampere meter directly to the output terminals of Vectatus.
+
+Calibration mode has following sub-modes (steps):
+  * `CALIBRATION_MODE_IDLE_CURRENT` - measure idle input and output current calibration values (no user intervention required, goes to next step almost immediatelly)
+  * `CALIBRATION_MODE_INPUT_VOLTAGE` - press MODE/OUTPUT to increase/decrease input voltage calibration value while measuring the input voltage with voltmeter and looking at serial output of Vectatus, once the values match hold MODE button to go to next step
+  * `CALIBRATION_MODE_OUTPUT_VOLTAGE` - press MODE/OUTPUT to increase/decrease output voltage calibration value while measuring the output voltage with voltmeter, once the values match hold MODE button to go to next step
+  * `CALIBRATION_MODE_INPUT_CURRENT` - press MODE/OUTPUT to increase/decrease input current calibration value while measuring the input current with ampere meter and looking at serial output of Vectatus, once the values match hold MODE button to go to next step
+  * `CALIBRATION_MODE_OUTPUT_CURRENT` - press MODE/OUTPUT to increase/decrease output current calibration value while measuring the output current with ampere meter (ampere meter should be high range >5A, as depending on programmed current it can deliver upto 3A, you essentially will create a short with ampere meter connected to the Vectatus output which is fine), once the values match hold MODE button to go to next step
+
+  Note: You can skip steps by holding MODE button (the values of these steps will not get changed).
+
+  After calibration wait around 10-30 seconds so the calibration values will get saved to EEPROM (entering ERROR mode right after would prevent them from saving).
+
 
 ## Wiki
 Please take a look at the [Wiki](https://github.com/kamilsss655/vectatus/wiki) section.
